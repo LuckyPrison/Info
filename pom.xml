@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>Links</artifactId>
+  <groupId>com.ulfric.links</groupId>
+  <description>Links management plugin</description>
+
+  <parent>
+    <groupId>com.ulfric</groupId>
+    <artifactId>usuite</artifactId>
+    <version>latest</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.ulfric</groupId>
+      <artifactId>Lib</artifactId>
+      <version>latest</version>
+      <scope>system</scope>
+      <systemPath>${depend.lib}</systemPath>
+    </dependency>
+  </dependencies>
+
+</project>

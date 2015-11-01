@@ -1,0 +1,64 @@
+##       #### ##    ## ##    ##  ######
+##        ##  ###   ## ##   ##  ##    ##
+##        ##  ####  ## ##  ##   ##
+##        ##  ## ## ## #####     ######
+##        ##  ##  #### ##  ##         ##
+##        ##  ##   ### ##   ##  ##    ##
+######## #### ##    ## ##    ##  ######
+
+name: ${project.artifactId}
+main: ${project.groupId}.${project.artifactId}
+version: ${project.version}
+author: ${project.author}
+website: ${project.website}
+database: false
+description: ${project.description}
+depend: [Lib]
+
+commands:
+  website:
+    usage: /<command>
+    description: View the website link
+    aliases: [web]
+  store:
+    usage: /<command>
+    description: View the store link
+    aliases: [donate]
+  teamspeak:
+    usage: /<command>
+    description: View the TeamSpeak3 ip
+    aliases: [ts, ts3]
+  issues:
+    usage: /<command>
+    description: View the issue tracker link
+    aliases: [bugs]
+  github:
+    usage: /<command>
+    description: View the GitHub link
+    aliases: [git, java]
+  twitter:
+    usage: /<command>
+    description: View the Twitter link
+    aliases: [tweet]
+  facebook:
+    usage: /<command>
+    description: View the Facebook link
+    aliases: [fb]
+  tumblr:
+    usage: /<command>
+    description: View the Tumblr link
+    aliases: [blog]
+  youtube:
+    usage: /<command>
+    description: View the YouTube link
+    aliases: [yt, videos]
+  twitch:
+    usage: /<command>
+    description: View the TwitchTV link
+    aliases: [stream]
+
+# WRITTEN BY ADAM "PACKET" EDWARDS
+# PERMISSION TO USE, DISTRIBUTE, OR
+# MODIFY MUST BE GRANTED DIRECTLY
+# FROM HIM. CONTACT: Skype:packetdev
+# OR EMAIL: packetdev@gmail.com
