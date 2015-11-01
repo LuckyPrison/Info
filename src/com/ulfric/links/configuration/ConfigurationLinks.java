@@ -33,9 +33,9 @@ public class ConfigurationLinks implements IConfiguration {
 	{
 		this.links = Maps.newEnumMap(LinkType.class);
 
-		for (String path : this.config.getKeys(false))
+		for (String path : this.config.getConfigurationSection("sites").getKeys(false))
 		{
-			this.links.put(LinkType.valueOf(path.toUpperCase()), this.config.getString(path));
+			this.links.put(LinkType.valueOf(path.toUpperCase()), this.config.getString("sites." + path));
 		}
 	}
 
