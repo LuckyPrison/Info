@@ -5,7 +5,7 @@ import java.util.Map;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import com.google.common.collect.Maps;
-import com.ulfric.lib.configuration.IConfiguration;
+import com.ulfric.lib.util.configuration.IConfiguration;
 import com.ulfric.links.Links;
 import com.ulfric.links.commands.enums.LinkType;
 
