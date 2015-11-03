@@ -1,9 +1,7 @@
 package com.ulfric.links.commands;
 
 import com.ulfric.lib.util.command.SimpleCommand;
-import com.ulfric.lib.util.string.Strings;
-import com.ulfric.links.commands.enums.LinkType;
-import com.ulfric.links.configuration.ConfigurationLinks;
+import com.ulfric.lib.util.player.Locale;
 
 public class CommandFacebook extends SimpleCommand {
 
@@ -11,7 +9,7 @@ public class CommandFacebook extends SimpleCommand {
 	@Override
 	public void run()
 	{
-		this.sendMessage(Strings.formatF("&2Facebook: &a$1", ConfigurationLinks.get().getLink(LinkType.FACEBOOK)));
+		Locale.send(this.getSender(), "link.facebook");
 	}
 
 
