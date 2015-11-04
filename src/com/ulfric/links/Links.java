@@ -1,16 +1,8 @@
 package com.ulfric.links;
 
 import com.ulfric.lib.plugin.UPlugin;
-import com.ulfric.links.commands.CommandFacebook;
-import com.ulfric.links.commands.CommandGithub;
-import com.ulfric.links.commands.CommandIssues;
-import com.ulfric.links.commands.CommandStore;
-import com.ulfric.links.commands.CommandTeamspeak;
-import com.ulfric.links.commands.CommandTumblr;
-import com.ulfric.links.commands.CommandTwitch;
-import com.ulfric.links.commands.CommandTwitter;
-import com.ulfric.links.commands.CommandWebsite;
-import com.ulfric.links.commands.CommandYoutube;
+import com.ulfric.lib.util.command.SimpleCommand;
+import com.ulfric.lib.util.player.Locale;
 
 public class Links extends UPlugin {
 
@@ -28,16 +20,19 @@ public class Links extends UPlugin {
 	@Override
 	public void onEnable()
 	{
-		this.registerCommand("website", new CommandWebsite());
-		this.registerCommand("store", new CommandStore());
-		this.registerCommand("teamspeak", new CommandTeamspeak());
-		this.registerCommand("issues", new CommandIssues());
-		this.registerCommand("github", new CommandGithub());
-		this.registerCommand("twitter", new CommandTwitter());
-		this.registerCommand("facebook", new CommandFacebook());
-		this.registerCommand("tumblr", new CommandTumblr());
-		this.registerCommand("youtube", new CommandYoutube());
-		this.registerCommand("twitch", new CommandTwitch());
+		for (String command : this.getDescription().getCommands().keySet())
+		{
+			this.registerCommand(command, new SimpleCommand()
+			{
+
+				@Override
+				public void run()
+				{
+					Locale.send(this.getSender(), "link." + command);
+				}
+
+			});
+		}
 	}
 
 	@Override
