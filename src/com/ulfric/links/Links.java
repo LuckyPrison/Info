@@ -19,11 +19,11 @@ public class Links extends UPlugin {
 	@Override
 	public void onEnable()
 	{
-		for (String command : this.getDescription().getCommands().keySet())
+		for (String link : this.getDescription().getCommands().keySet())
 		{
-			this.registerCommand(command, (sender, cmd, label, args) ->
+			this.registerCommand(link, (sender, command, label, args) ->
 			{
-				Locale.send(sender, "link." + command);
+				Locale.send(sender, "link." + link);
 
 				return true;
 			});
