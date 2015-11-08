@@ -1,7 +1,6 @@
 package com.ulfric.links;
 
 import com.ulfric.lib.plugin.UPlugin;
-import com.ulfric.lib.util.command.SimpleCommand;
 import com.ulfric.lib.util.player.Locale;
 
 public class Links extends UPlugin {
@@ -22,15 +21,11 @@ public class Links extends UPlugin {
 	{
 		for (String command : this.getDescription().getCommands().keySet())
 		{
-			this.registerCommand(command, new SimpleCommand()
+			this.registerCommand(command, (sender, cmd, label, args) ->
 			{
+				Locale.send(sender, "link." + command);
 
-				@Override
-				public void run()
-				{
-					Locale.send(this.getSender(), "link." + command);
-				}
-
+				return true;
 			});
 		}
 	}
