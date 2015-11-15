@@ -18,43 +18,43 @@ depend: [Lib]
 commands:
   website:
     usage: /<command>
-    description: View the website link
+    description: Get the website link
     aliases: [web]
   store:
     usage: /<command>
-    description: View the store link
+    description: Get the store link
     aliases: [donate]
   teamspeak:
     usage: /<command>
-    description: View the TeamSpeak3 ip
+    description: Get the TeamSpeak3 ip
     aliases: [ts, ts3]
   issues:
     usage: /<command>
-    description: View the issue tracker link
+    description: Get the issue tracker link
     aliases: [bugs]
   github:
     usage: /<command>
-    description: View the GitHub link
+    description: Get the GitHub link
     aliases: [git, java]
   twitter:
     usage: /<command>
-    description: View the Twitter link
+    description: Get the Twitter link
     aliases: [tweet]
   facebook:
     usage: /<command>
-    description: View the Facebook link
+    description: Get the Facebook link
     aliases: [fb]
   tumblr:
     usage: /<command>
-    description: View the Tumblr link
+    description: Get the Tumblr link
     aliases: [blog]
   youtube:
     usage: /<command>
-    description: View the YouTube link
+    description: Get the YouTube link
     aliases: [yt, videos]
   twitch:
     usage: /<command>
-    description: View the TwitchTV link
+    description: Get the TwitchTV link
     aliases: [stream]
 
 # WRITTEN BY ADAM "PACKET" EDWARDS
