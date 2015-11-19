@@ -10,13 +10,13 @@ public class Links extends UPlugin {
 	public static Links get() { return Links.i; }
 
 	@Override
-	public void onLoad()
+	public void load()
 	{
 		Links.i = this;
 	}
 
 	@Override
-	public void onEnable()
+	public void enable()
 	{
 		for (String link : this.getDescription().getCommands().keySet())
 		{
