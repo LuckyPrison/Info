@@ -9,7 +9,6 @@ public class Links extends UPlugin {
 	private static Links i;
 	public static Links get() { return Links.i; }
 
-
 	@Override
 	public void onLoad()
 	{
