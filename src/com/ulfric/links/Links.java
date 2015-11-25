@@ -1,9 +1,10 @@
 package com.ulfric.links;
 
-import com.ulfric.lib.plugin.UPlugin;
-import com.ulfric.lib.util.player.Locale;
+import com.ulfric.lib.api.locale.Locale;
+import com.ulfric.lib.api.module.Plugin;
+import com.ulfric.lib.api.server.Commands;
 
-public class Links extends UPlugin {
+public class Links extends Plugin {
 
 
 	private static Links i;
@@ -20,7 +21,7 @@ public class Links extends UPlugin {
 	{
 		for (String link : this.getDescription().getCommands().keySet())
 		{
-			this.registerCommand(link, (sender, command, label, args) ->
+			Commands.register(this, link, (sender, command, label, args) ->
 			{
 				Locale.send(sender, "link." + link);
 
@@ -30,7 +31,7 @@ public class Links extends UPlugin {
 	}
 
 	@Override
-	public void annihilate()
+	public void disable()
 	{
 		Links.i = null;
 	}
