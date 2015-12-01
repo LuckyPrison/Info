@@ -56,6 +56,9 @@ commands:
     usage: /<command>
     description: Get the TwitchTV link
     aliases: [stream]
+  skype:
+    usage: /<command>
+    description: Get the Skype name
 
 # WRITTEN BY ADAM "PACKET" EDWARDS
 # PERMISSION TO USE, DISTRIBUTE, OR
