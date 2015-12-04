@@ -19,7 +19,7 @@ commands:
   website:
     usage: /<command>
     description: Get the website link
-    aliases: [web]
+    aliases: [web, forum, forums]
   store:
     usage: /<command>
     description: Get the store link

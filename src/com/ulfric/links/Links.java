@@ -5,7 +5,6 @@ import com.ulfric.lib.api.module.Plugin;
 
 public class Links extends Plugin {
 
-
 	private static Links i;
 	public static Links get() { return Links.i; }
 
@@ -36,6 +35,5 @@ public class Links extends Plugin {
 	{
 		Links.i = null;
 	}
-
 
 }
