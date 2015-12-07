@@ -1,10 +1,10 @@
-##       #### ##    ## ##    ##  ######
-##        ##  ###   ## ##   ##  ##    ##
-##        ##  ####  ## ##  ##   ##
-##        ##  ## ## ## #####     ######
-##        ##  ##  #### ##  ##         ##
-##        ##  ##   ### ##   ##  ##    ##
-######## #### ##    ## ##    ##  ######
+#### ##    ## ########  ####### 
+ ##  ###   ## ##       ##     ##
+ ##  ####  ## ##       ##     ##
+ ##  ## ## ## ######   ##     ##
+ ##  ##  #### ##       ##     ##
+ ##  ##   ### ##       ##     ##
+#### ##    ## ##        #######
 
 name: ${project.artifactId}
 main: ${project.groupId}.${project.artifactId}
@@ -59,6 +59,16 @@ commands:
   skype:
     usage: /<command>
     description: Get the Skype name
+  apply:
+    usage: /<command>
+    description: Get the staff application
+    aliases: [app, staffapp]
+  ytrank:
+    usage: /<command>
+    description: Get the YT rank
+  chests:
+    usage: /<command>
+    description: Get information about chests
 
 # WRITTEN BY ADAM "PACKET" EDWARDS
 # PERMISSION TO USE, DISTRIBUTE, OR

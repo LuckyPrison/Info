@@ -1,23 +1,23 @@
-package com.ulfric.links;
+package com.ulfric.info;
 
 import com.ulfric.lib.api.locale.Locale;
 import com.ulfric.lib.api.module.Plugin;
 
-public class Links extends Plugin {
+public class Info extends Plugin {
 
-	private static Links i;
-	public static Links get() { return Links.i; }
+	private static Info i;
+	public static Info get() { return Info.i; }
 
 	@Override
 	public void load()
 	{
-		Links.i = this;
+		Info.i = this;
 
 		for (String link : this.getDescription().getCommands().keySet())
 		{
 			this.addCommand(link, (sender, command, label, args) ->
 			{
-				Locale.send(sender, "link." + link);
+				Locale.send(sender, "info." + link);
 
 				return true;
 			});
@@ -33,7 +33,7 @@ public class Links extends Plugin {
 	@Override
 	public void disable()
 	{
-		Links.i = null;
+		Info.i = null;
 	}
 
 }
