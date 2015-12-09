@@ -69,6 +69,9 @@ commands:
   chests:
     usage: /<command>
     description: Get information about chests
+  autosell:
+    usage: /<command>
+    description: Get information about autosell
 
 # WRITTEN BY ADAM "PACKET" EDWARDS
 # PERMISSION TO USE, DISTRIBUTE, OR
