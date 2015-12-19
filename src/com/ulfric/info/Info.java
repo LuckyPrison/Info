@@ -5,14 +5,9 @@ import com.ulfric.lib.api.module.Plugin;
 
 public class Info extends Plugin {
 
-	private static Info i;
-	public static Info get() { return Info.i; }
-
 	@Override
 	public void load()
 	{
-		Info.i = this;
-
 		for (String link : this.getDescription().getCommands().keySet())
 		{
 			this.addCommand(link, (sender, command, label, args) ->
@@ -22,12 +17,6 @@ public class Info extends Plugin {
 				return true;
 			});
 		}
-	}
-
-	@Override
-	public void disable()
-	{
-		Info.i = null;
 	}
 
 }
