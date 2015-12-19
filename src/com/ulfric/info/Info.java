@@ -25,12 +25,6 @@ public class Info extends Plugin {
 	}
 
 	@Override
-	public void enable()
-	{
-		// DO NOTHING
-	}
-
-	@Override
 	public void disable()
 	{
 		Info.i = null;
