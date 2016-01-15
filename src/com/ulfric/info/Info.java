@@ -10,12 +10,7 @@ public class Info extends Plugin {
 	{
 		for (String link : this.getDescription().getCommands().keySet())
 		{
-			this.addCommand(link, (sender, command, label, args) ->
-			{
-				Locale.send(sender, "info." + link);
-
-				return true;
-			});
+			this.addCommand(link, sender -> Locale.send(sender, "info." + link));
 		}
 	}
 
