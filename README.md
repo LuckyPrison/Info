@@ -1,2 +1,2 @@
-# Links
+# Info
 Links plugin
