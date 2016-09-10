@@ -6,6 +6,7 @@
     <groupId>com.ulfric.info</groupId>
     <description>Info management plugin</description>
     <version>1.0.0</version>
+    <name>Info</name>
 
     <parent>
         <groupId>com.ulfric</groupId>
