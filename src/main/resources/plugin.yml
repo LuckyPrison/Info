@@ -20,6 +20,9 @@ commands:
     usage: /<command>
     description: Get the website link
     aliases: [web, forum, forums]
+  vote:
+    usage: /<command>
+    description: Get the vote link
   store:
     usage: /<command>
     description: Get the store link
